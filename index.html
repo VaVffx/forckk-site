@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>forckk — developer</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+    background: #050505;
+        color: #fff;
+            font-family: 'Courier New', Courier, monospace;
+                display: flex;
+                    flex-direction: column;
+                        align-items: center;
+                            padding: 4rem 1.5rem;
+                                min-height: 100vh;
+                                }
+                                body::before {
+                                    content: '';
+                                        position: fixed;
+                                            top: 0; left: 0;
+                                                width: 100%; height: 100%;
+                                                    background: repeating-linear-gradient(to bottom, rgba(255,255,255,0.02) 0, rgba(255,255,255,0.02) 1px, transparent 1px, transparent 3px);
+                                                        pointer-events: none;
+                                                            z-index: 100;
+                                                            }
+                                                            .green { color: #00ff41; }
+                                                            .hero-title { font-size: 3.5rem; letter-spacing: 0.15em; text-align: center; }
+                                                            .hero-title a { color: #fff; text-decoration: none; }
+                                                            .hero-sub { color: #666; margin-top: 1rem; min-height: 1.5em; text-align: center; }
+                                                            .cursor { color: #00ff41; animation: blink 1s steps(1) infinite; }
+                                                            @keyframes blink { 50% { opacity: 0; } }
+                                                            .section { width: 100%; max-width: 600px; margin-top: 4rem; }
+                                                            .section-title { color: #00ff41; margin-bottom: 1rem; }
+                                                            .terminal-box {
+                                                                background: #0a0a0a;
+                                                                    border: 1px solid #1a1a1a;
+                                                                        padding: 1.2rem;
+                                                                            line-height: 1.9;
+                                                                                color: #aaa;
+                                                                                    font-size: 0.85rem;
+                                                                                        overflow-x: auto;
+                                                                                        }
+                                                                                        .project {
+                                                                                            background: #0a0a0a;
+                                                                                                border: 1px solid #1a1a1a;
+                                                                                                    padding: 1rem;
+                                                                                                        margin-bottom: 0.8rem;
+                                                                                                            font-size: 0.85rem;
+                                                                                                            }
+                                                                                                            .project h3 { font-size: 1rem; margin-bottom: 0.3rem; }
+                                                                                                            .project p { color: #666; }
+                                                                                                            .wip { color: #ffaa00; font-size: 0.75rem; }
+                                                                                                            .done { color: #00ff41; font-size: 0.75rem; }
+                                                                                                            .btn {
+                                                                                                                display: inline-block;
+                                                                                                                    color: #00ff41;
+                                                                                                                        border: 1px solid #00ff41;
+                                                                                                                            padding: 0.8rem 2rem;
+                                                                                                                                text-decoration: none;
+                                                                                                                                    margin-top: 1rem;
+                                                                                                                                    }
+                                                                                                                                    .contact-text { color: #666; }
+                                                                                                                                    .footer { margin-top: 4rem; color: #333; font-size: 0.7rem; text-align: center; }
+                                                                                                                                    </style>
+                                                                                                                                    </head>
+                                                                                                                                    <body>
+
+                                                                                                                                    <h1 class="hero-title"><a href="https://t.me/F0rckk" target="_blank">forckk</a></h1>
+                                                                                                                                    <p class="hero-sub"><span id="typewriter"></span><span class="cursor">_</span></p>
+
+                                                                                                                                    <div class="section">
+                                                                                                                                        <h2 class="section-title">// about</h2>
+                                                                                                                                            <div class="terminal-box">
+                                                                                                                                                    <p><span class="green">$</span> whoami</p>
+                                                                                                                                                            <p>forckk / @F0rckk / 13 y.o. developer</p>
+                                                                                                                                                                    <p><span class="green">$</span> cat interests.txt</p>
+                                                                                                                                                                            <p>frontend // system programming // C</p>
+                                                                                                                                                                                    <p>minecraft servers // .gram domains</p>
+                                                                                                                                                                                            <p><span class="green">$</span> cat watched.txt</p>
+                                                                                                                                                                                                    <p>gurren lagann // evangelion</p>
+                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                        </div>
+
+                                                                                                                                                                                                        <div class="section">
+                                                                                                                                                                                                            <h2 class="section-title">// projects</h2>
+                                                                                                                                                                                                                <div class="project">
+                                                                                                                                                                                                                        <h3>obsidian-killer</h3>
+                                                                                                                                                                                                                                <p>Заметочник без Electron. Tauri + TS.</p>
+                                                                                                                                                                                                                                        <span class="wip">[ in progress ]</span>
+                                                                                                                                                                                                                                            </div>
+                                                                                                                                                                                                                                                <div class="project">
+                                                                                                                                                                                                                                                        <h3>tg-stats-bot</h3>
+                                                                                                                                                                                                                                                                <p>Телеграм-бот для аналитики контента.</p>
+                                                                                                                                                                                                                                                                        <span class="wip">[ in progress ]</span>
+                                                                                                                                                                                                                                                                            </div>
+                                                                                                                                                                                                                                                                                <div class="project">
+                                                                                                                                                                                                                                                                                        <h3>this site</h3>
+                                                                                                                                                                                                                                                                                                <p>Чистый HTML/CSS/JS. Без фреймворков.</p>
+                                                                                                                                                                                                                                                                                                        <span class="done">[ done ]</span>
+                                                                                                                                                                                                                                                                                                            </div>
+                                                                                                                                                                                                                                                                                                            </div>
+
+                                                                                                                                                                                                                                                                                                            <div class="section">
+                                                                                                                                                                                                                                                                                                                <h2 class="section-title">// contact</h2>
+                                                                                                                                                                                                                                                                                                                    <p class="contact-text">Хочешь обсудить C, Tauri или Еву?</p>
+                                                                                                                                                                                                                                                                                                                        <a href="https://t.me/F0rckk" target="_blank" class="btn">@F0rckk</a>
+                                                                                                                                                                                                                                                                                                                        </div>
+
+                                                                                                                                                                                                                                                                                                                        <p class="footer">forckk // built by hand, no electron was harmed</p>
+
+                                                                                                                                                                                                                                                                                                                        <script>
+                                                                                                                                                                                                                                                                                                                        const phrases = [
+                                                                                                                                                                                                                                                                                                                            'learning C...',
+                                                                                                                                                                                                                                                                                                                                'building obsidian-killer without electron',
+                                                                                                                                                                                                                                                                                                                                    'frontend // system programming'
+                                                                                                                                                                                                                                                                                                                                    ];
+                                                                                                                                                                                                                                                                                                                                    const el = document.getElementById('typewriter');
+                                                                                                                                                                                                                                                                                                                                    let pi = 0, ci = 0, del = false;
+                                                                                                                                                                                                                                                                                                                                    function type() {
+                                                                                                                                                                                                                                                                                                                                        const cur = phrases[pi];
+                                                                                                                                                                                                                                                                                                                                            if (!del) {
+                                                                                                                                                                                                                                                                                                                                                    el.textContent = cur.slice(0, ci + 1);
+                                                                                                                                                                                                                                                                                                                                                            ci++;
+                                                                                                                                                                                                                                                                                                                                                                    if (ci === cur.length) { del = true; setTimeout(type, 1500); return; }
+                                                                                                                                                                                                                                                                                                                                                                        } else {
+                                                                                                                                                                                                                                                                                                                                                                                el.textContent = cur.slice(0, ci - 1);
+                                                                                                                                                                                                                                                                                                                                                                                        ci--;
+                                                                                                                                                                                                                                                                                                                                                                                                if (ci === 0) { del = false; pi = (pi + 1) % phrases.length; }
+                                                                                                                                                                                                                                                                                                                                                                                                    }
+                                                                                                                                                                                                                                                                                                                                                                                                        setTimeout(type, del ? 40 : 80);
+                                                                                                                                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                                                                                                                                        type();
+                                                                                                                                                                                                                                                                                                                                                                                                        </script>
+
+                                                                                                                                                                                                                                                                                                                                                                                                        </body>
+                                                                                                                                                                                                                                                                                                                                                                                                        </html>
